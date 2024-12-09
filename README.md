@@ -1,1 +1,3 @@
-# awards
+# React App
+
+- Tailwind CSS
