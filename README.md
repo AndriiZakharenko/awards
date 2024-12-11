@@ -3,5 +3,5 @@
 - Tailwind CSS
 - GSAP
 
-### inspired by 
+### Inspired by 
 [Adrian Hajdin](https://github.com/adrianhajdin)
