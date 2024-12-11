@@ -3,4 +3,5 @@
 - Tailwind CSS
 - GSAP
 
-## inspired by [Adrian Hajdin](https://github.com/adrianhajdin)
+### inspired by 
+[Adrian Hajdin](https://github.com/adrianhajdin)

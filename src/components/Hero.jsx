@@ -13,7 +13,11 @@ const Hero = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
 
-  const totalVideos = 4;
+  const totalVideos = 3;
+
+  useEffect(() => {
+    if (loadedVideos === totalVideos - 1) setIsLoading(false);
+  }, [loadedVideos]);
 
   const nextVideoRef = useRef(null);
 
@@ -27,10 +31,6 @@ const Hero = () => {
     setHasClicked(true);
     setCurrentIndex(upcomingVideoIndex);
   };
-
-  useEffect(() => {
-    if (loadedVideos === totalVideos - 1) setIsLoading(false);
-  }, [loadedVideos]);
 
   useGSAP(
     () => {
@@ -93,7 +93,7 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-50 "
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75 "
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
