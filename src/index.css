@@ -1,12 +1,14 @@
-@tailwind base;
+@tailwind base;@import url("https://fonts.cdnfonts.com/css/general-sans");
+
+
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-family: "General Sans", sans-serif;
   width: 100dvw;
-  background-color: #dfdff0;
-  overflow-y: hidden;
+  background-color: #DFDFF0;
+  overflow-x: hidden;
 }
 
 @layer base {
