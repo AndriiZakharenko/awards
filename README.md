@@ -1,6 +1,7 @@
 # React App
 
 - Tailwind CSS
+- Adaptive
 - GSAP
 
 ### Inspired by 
