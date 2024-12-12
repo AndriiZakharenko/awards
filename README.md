@@ -5,7 +5,6 @@
 - GSAP
 
 ## Demo Links
-
 - [DEMO LINK](https://AndriiZakharenko.github.io/awards/)
 
 ### Inspired by 
