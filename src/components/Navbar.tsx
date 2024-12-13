@@ -5,8 +5,7 @@ import { useWindowScroll } from "react-use";
 import { TiLocationArrow } from "react-icons/ti";
 
 import Button from "./Button";
-
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+import { NavItem } from "../constants/navItems";
 
 const Navbar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -72,7 +71,7 @@ const Navbar = () => {
           </div>
           <div className="flex h-full items-center">
             <div className="hidden md:block">
-              {navItems.map((item, index) => (
+              {Object.values(NavItem).map((item, index) => (
                 <a
                   key={index}
                   href={`#${item.toLowerCase()}`}
