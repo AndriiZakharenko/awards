@@ -1,10 +1,15 @@
 import { useRef, useState } from "react";
 
-const BentoTilt = ({ children, className = "" }) => {
-  const [transformStyle, setTransformStyle] = useState("");
-  const itemRef = useRef(null);
+interface BentoTiltProps {
+  children: React.ReactNode;
+  className?: string;
+}
 
-  const handleMouseMove = (event) => {
+const BentoTilt = ({ children, className = "" }: BentoTiltProps) => {
+  const [transformStyle, setTransformStyle] = useState("");
+  const itemRef = useRef<HTMLDivElement | null>(null);
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!itemRef.current) return;
 
     const { left, top, width, height } =
