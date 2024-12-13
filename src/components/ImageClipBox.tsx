@@ -3,9 +3,9 @@ interface ImageClipBoxProps {
   clipClass?: string;
 }
 const ImageClipBox = ({ src, clipClass = "" }: ImageClipBoxProps) => (
-    <div className={clipClass}>
-      <img src={src} />
-    </div>
-  );
+  <div className={clipClass}>
+    <img src={src} />
+  </div>
+);
 
-  export default ImageClipBox
+export default ImageClipBox;

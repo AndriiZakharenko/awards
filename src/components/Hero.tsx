@@ -83,7 +83,6 @@ const Hero = () => {
 
   const getVideoSrc = (index: number) => `/awards/videos/hero-${index}.mp4`;
 
-
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {isLoading && (
