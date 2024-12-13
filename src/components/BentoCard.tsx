@@ -58,7 +58,7 @@ const BentoCard = ({ src, title, description }: BentoCardProps) => {
             }}
           />
           <TiLocationArrow className="relative z-20" />
-          <p className="relative z-20">coming soon</p>
+          <p className="relative z-20 text-gray-500">coming soon</p>
         </div>
       </div>
     </div>
