@@ -19,7 +19,7 @@ const Hero = () => {
     if (loadedVideos === totalVideos - 1) setIsLoading(false);
   }, [loadedVideos]);
 
-  const nextVideoRef = useRef(null);
+  const nextVideoRef = useRef<HTMLVideoElement | null>(null);
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
@@ -43,7 +43,11 @@ const Hero = () => {
           height: "100%",
           duration: 1,
           ease: "power1.inOut",
-          onStart: () => nextVideoRef.current.play(),
+          onStart: () => {
+            if (nextVideoRef.current) {
+              nextVideoRef.current.play();
+            }
+          },
         });
         gsap.from("#current-video", {
           transformOrigin: "center center",
@@ -77,7 +81,8 @@ const Hero = () => {
     });
   });
 
-  const getVideoSrc = (index) => `/awards/videos/hero-${index}.mp4`;
+  const getVideoSrc = (index: number) => `/awards/videos/hero-${index}.mp4`;
+
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
@@ -149,6 +154,7 @@ const Hero = () => {
               id="watch-trailer"
               title="Watch Trailer"
               leftIcon={<TiLocationArrow />}
+              rightIcon={null}
               containerClass="!bg-yellow-300 flex-center gap-1"
             />
           </div>

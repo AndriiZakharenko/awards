@@ -14,14 +14,14 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isNavVisible, setIsNavVisible] = useState(true);
 
-  const navContainerRef = useRef(null);
-  const audioElementRef = useRef(null);
+  const navContainerRef = useRef<HTMLDivElement | null>(null);
+  const audioElementRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     if (isAudioPlaying) {
-      audioElementRef.current.play();
+      audioElementRef.current?.play();
     } else {
-      audioElementRef.current.pause();
+      audioElementRef.current?.pause();
     }
   }, [isAudioPlaying]);
 
@@ -30,13 +30,13 @@ const Navbar = () => {
   useEffect(() => {
     if (currentScrollY === 0) {
       setIsNavVisible(true);
-      navContainerRef.current.classList.remove("floating-nav");
+      navContainerRef.current?.classList.remove("floating-nav");
     } else if (currentScrollY > lastScrollY) {
       setIsNavVisible(false);
-      navContainerRef.current.classList.add("floating-nav");
+      navContainerRef.current?.classList.add("floating-nav");
     } else if (currentScrollY < lastScrollY) {
       setIsNavVisible(true);
-      navContainerRef.current.classList.add("floating-nav");
+      navContainerRef.current?.classList.add("floating-nav");
     }
     setLastScrollY(currentScrollY);
   }, [currentScrollY, lastScrollY]);
