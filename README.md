@@ -1,5 +1,6 @@
-# React App
+# Awards
 
+- React.js
 - Tailwind CSS
 - Adaptive
 - GSAP
