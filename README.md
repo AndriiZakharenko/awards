@@ -11,4 +11,4 @@
 - [Original](https://zentry.com/)
 
 ### Inspired by 
-[Adrian Hajdin](https://github.com/adrianhajdin)
+- [Adrian Hajdin](https://github.com/adrianhajdin)
