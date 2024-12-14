@@ -1,7 +1,7 @@
 # Awards
 
-- React.js
-- Tailwind CSS
+- React
+- Tailwind
 - Adaptive
 - GSAP
 - Typescript
