@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/awards/",
+  base: "/awards",
   plugins: [react()],
   css: {
     postcss: './postcss.config.js',
