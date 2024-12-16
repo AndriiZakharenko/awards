@@ -5,6 +5,7 @@
 - Adaptive
 - GSAP
 - Typescript
+- Vite
 
 ## Demo Links
 - [Demo](https://AndriiZakharenko.github.io/awards/)
