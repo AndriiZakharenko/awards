@@ -2,14 +2,14 @@
 
 ### Description
 
-- Implemented 2 collections with 5 endpoints into an expense tracking app.
+- Created a modern landing page
 
 ### Stack
 
 - HTML (BEM)
 - CSS (TailWind)
 - JS
-- - Adaptive
+- Adaptive
 - GSAP
 - React
 - ReactDOM
