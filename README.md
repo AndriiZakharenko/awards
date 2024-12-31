@@ -11,7 +11,7 @@
 - JS
 - Adaptive
 - GSAP
-- React
+- React (18)
 - ReactDOM
 - Typescript
 
