@@ -20,7 +20,7 @@
 - ESlint
 - Vite
 
-## Demo Links
+### Demo Links
 - [Demo](https://AndriiZakharenko.github.io/awards/)
 - [Original](https://zentry.com/)
 
